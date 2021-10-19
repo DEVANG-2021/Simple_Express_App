@@ -1,0 +1,26 @@
+<div class="container">
+<div class="verse-set" id="{{setID}}">
+  <div class="verse-set-header"><span>{{setTitle}}</span></div>
+
+    <div class="verse-set-box">
+        <h1 id="g1">Blogs</h1>
+      <ul>
+        {{#each blogs}}
+        <a href="/blogpage/{{this.slug}}" class="play-button">{{this.title}}</a><div id="myDiv">{{this.content}}</div>
+        {{/each}}
+      </ul>
+     </div>
+  
+</div>
+</div>
+
+<script>
+function myfunc() {
+    document.getElementById("myDiv").style.visibility = "visible";
+
+}
+function myfunc2() {
+    
+  document.getElementById("myDiv").style.animationDelay = "3s";
+}
+</script>
